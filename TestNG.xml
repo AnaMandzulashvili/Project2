@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="2" parallel="classes">
+
+    <test name="Testing Swoop webpage">
+        <groups>
+            <define name="Regression1">
+                <include name="Group1"/>
+            </define>
+            <define name="Regression2">
+                <include name="Group2"/>
+            </define>
+        </groups>
+        <classes>
+            <class name="TestClass"/>
+        </classes>
+    </test>
+
+</suite>
